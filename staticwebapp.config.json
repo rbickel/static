@@ -10,5 +10,11 @@
         }
       }
     }
-  }
+  },
+   "routes": [
+    {
+      "route": "/*",
+      "allowedRoles": ["authenticated"]
+    }
+     ]
 }
