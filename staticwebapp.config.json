@@ -1,7 +1,7 @@
 {
   "auth": {
     "identityProviders": {
-      "azureActiveDirectory": {
+      "myaad": {
         "userDetailsClaim": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
         "registration": {
           "openIdIssuer": "https://login.microsoftonline.com/16b3c013-d300-468d-ac64-7eda0820b6d3",
@@ -19,7 +19,7 @@
      ]
     "responseOverrides": {
     "401": {
-      "redirect": "/.auth/login/aad?post_login_redirect_uri=.referrer",
+      "redirect": "/.auth/login/myaad?post_login_redirect_uri=.referrer",
       "statusCode": 302
     }
   }
