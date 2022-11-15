@@ -12,14 +12,11 @@
     }
   },
   "routes": [
-        {
+    {
       "route": "/*",
       "allowedRoles": [
         "authenticated"
       ]
-    },
-    {
-      "route": "/index.html",
       "headers": {
         "Cache-Control": "no-store"
       }
