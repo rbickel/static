@@ -11,13 +11,24 @@
       }
     }
   },
-   "routes": [
+  "routes": [
+    {
+      "route": "/index.html",
+      "allowedRoles": [
+        "authenticated"
+      ],
+      "headers": {
+        "Cache-Control": "no-store"
+      }
+    },
     {
       "route": "/*",
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": [
+        "authenticated"
+      ]
     }
-     ]
-    "responseOverrides": {
+  ],
+  "responseOverrides": {
     "401": {
       "redirect": "/.auth/login/myaad?post_login_redirect_uri=.referrer",
       "statusCode": 302
