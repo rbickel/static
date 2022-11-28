@@ -14,18 +14,12 @@
   "routes": [
     {
       "route": "/",
-      "allowedRoles": [
-        "authenticated"
-      ],
       "headers": {
         "Cache-Control": "no-store"
       }
     },
     {
       "route": "/*",
-      "allowedRoles": [
-        "authenticated"
-      ]
     }
   ],
   "responseOverrides": {
